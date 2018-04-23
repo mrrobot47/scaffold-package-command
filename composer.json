@@ -1,0 +1,32 @@
+{
+    "name": "easyengine/scaffold-package-command",
+    "description": "Scaffolds EE commands with basic skeleton, full README.md, and more.",
+    "type": "ee-cli-package",
+    "homepage": "https://github.com/easyengine/scaffold-package-command",
+    "support": {
+        "issues": "https://github.com/easyengine/scaffold-package-command/issues"
+    },
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": { "EE\\": "src" },
+        "files": [ "scaffold-package-command.php" ]
+    },
+    "require": {},
+    "require-dev": {
+        "easyengine/easyengine": "*",
+        "behat/behat": "~2.5"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        },
+        "commands": [
+            "scaffold package",
+            "scaffold package-tests",
+            "scaffold package-readme",
+            "scaffold package-github"
+        ]
+    }
+}
